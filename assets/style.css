@@ -355,6 +355,7 @@ button {
 }
 
 /* ===== MEDIA QUERIES ===== */
+/* small screens */
 @media screen and (max-width: 350px) {
   .container {
     margin-left: var(--mb-1);
@@ -368,5 +369,20 @@ button {
 
   .task__list__content {
     padding-right: 3.5rem;
+  }
+}
+
+/* mediu screens */
+@media screen and (min-width: 568px) {
+  .home__content {
+    grid-template-columns: max-content 1fr;
+  }
+
+  .home__data {
+    grid-column: initial;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
