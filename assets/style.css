@@ -130,3 +130,43 @@ a {
 .home__container {
   gap: 1rem;
 }
+
+.home__content {
+  grid-template-columns: 3fr 0.5fr;
+  padding-top: 3.5rem;
+  align-items: center;
+}
+
+.home__social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.home__social-icon {
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.home__social-icon:hover {
+  color: var(--first-color-alt);
+}
+
+.home__data {
+  grid-column: 1/2;
+}
+
+.home__title {
+  font-size: var(--big-font-size);
+}
+
+.home__subtitle {
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-75);
+}
+
+.home__description {
+  margin-bottom: var(--mb-2);
+}
