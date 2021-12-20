@@ -184,6 +184,7 @@ button {
 .home__social {
   display: grid;
   grid-template-columns: max-content;
+  grid-column: main-end;
   row-gap: 1rem;
 }
 
