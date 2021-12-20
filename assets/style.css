@@ -256,6 +256,20 @@ button {
   gap: 1.5rem;
 }
 
+.task__list__li,
+.task__list__ul {
+  display: flex;
+}
+
+.task__list__ul {
+  flex-direction: column;
+}
+
+.task__list__li {
+  justify-content: space-between;
+  margin-bottom: var(--mb-1);
+}
+
 .task__list__content {
   padding: relative;
   background-color: var(--container-color);
