@@ -220,6 +220,28 @@ button {
   row-gap: 3rem;
 }
 
+.insert__content {
+  background-color: var(--input-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.insert__label {
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+.insert__input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
 .insert__button {
   cursor: pointer;
   font-size: var(--small-font-size);
