@@ -353,3 +353,20 @@ button {
 .footer__social {
   color: #fff;
 }
+
+/* ===== MEDIA QUERIES ===== */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .task__list__container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+
+  .task__list__content {
+    padding-right: 3.5rem;
+  }
+}
