@@ -227,6 +227,8 @@ button {
   background-color: var(--input-color);
   border-radius: 0.5rem;
   padding: 0.75rem 1rem 0.25rem;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
 }
 
 .insert__label {
@@ -248,6 +250,7 @@ button {
 .insert__button {
   cursor: pointer;
   font-size: var(--small-font-size);
+  grid-column: main-end;
 }
 
 .insert__button:hover .button__icon {
