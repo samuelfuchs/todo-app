@@ -215,6 +215,20 @@ button {
   margin-bottom: var(--mb-2);
 }
 
+/* insert section */
+.insert__container {
+  row-gap: 3rem;
+}
+
+.insert__button {
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
+
+.insert__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+
 /* task list section */
 .task__list__container {
   gap: 1.5rem;
