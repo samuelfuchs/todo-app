@@ -114,6 +114,50 @@ a {
   text-align: center;
 }
 
+/* buttons */
+button {
+  border: none;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.button--flex {
+  display: inline-block;
+  align-items: center;
+}
+
+.button--small {
+  padding: 0.75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
+
 /* layout */
 .container {
   max-width: 768px;
@@ -169,4 +213,37 @@ a {
 
 .home__description {
   margin-bottom: var(--mb-2);
+}
+
+/* task list section */
+.task__list__container {
+  gap: 1.5rem;
+}
+
+.task__list__content {
+  padding: relative;
+  background-color: var(--container-color);
+  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.task__list__content:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.task__list__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
+}
+
+.task__list__button {
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
+
+.task__list__button:hover .button__icon {
+  transform: scale(1.4);
 }
