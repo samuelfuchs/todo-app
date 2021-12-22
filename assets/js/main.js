@@ -1,11 +1,10 @@
 const addBtn = document.querySelector('#add--button')
-const addBtnAlt = document.querySelector('.insert__button')
+let fieldText = document.getElementById('subdomain')
 
 addBtn.addEventListener('click', testFunction)
-
-addBtnAlt.addEventListener('click', testFunction)
+fieldText.addEventListener('click', testFunction)
 
 function testFunction(event) {
   event.preventDefault()
-  console.log('Finally clicked')
+  console.log(fieldText.value)
 }
