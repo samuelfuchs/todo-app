@@ -226,8 +226,10 @@ button {
 .insert__content {
   background-color: var(--input-color);
   border-radius: 0.5rem;
-  padding: 0.75rem 1rem 0.25rem;
+  padding: 0.75rem 1rem 0.75rem;
   grid-template-columns: 8fr 2fr;
+  align-items: center;
+  justify-items: stretch;
 }
 
 .insert__label {
@@ -249,6 +251,11 @@ button {
 .insert__button {
   cursor: pointer;
   font-size: var(--small-font-size);
+}
+
+.insert__content--button--div {
+  align-self: center;
+  align-self: end;
 }
 
 .insert__button:hover .button__icon {
