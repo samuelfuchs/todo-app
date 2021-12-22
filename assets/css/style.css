@@ -244,19 +244,23 @@ button {
   color: var(--text-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  border: none;
-  outline: none;
+  border: var(--text-color);
+  outline: #fff solid;
+  border-radius: 5px;
   padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+.insert__input:hover {
+  outline: var(--text-color-light) solid;
+}
+.insert__input:focus,
+.insert__input:active {
+  outline: var(--text-color) solid;
 }
 
 .insert__button {
   cursor: pointer;
   font-size: var(--small-font-size);
-}
-
-.insert__content--button--div {
-  align-self: center;
-  align-self: end;
 }
 
 .insert__button:hover .button__icon {
