@@ -13,14 +13,14 @@ function testFunction(event) {
     alert('The field is empty')
   } else {
     const li = document.createElement('li')
-    li.appendChild(document.createTextNode('Four'))
+    li.appendChild(document.createTextNode(fieldText.value))
     listUl.appendChild(li)
   }
 }
 
 function generateItem() {}
 
-// =======================
+// ===== helper func =====
 function clickedFunction() {
   console.log('this item was clicked')
 }
