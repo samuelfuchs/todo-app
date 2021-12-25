@@ -299,12 +299,6 @@ button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.task__list__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
-  font-weight: var(--font-medium);
-}
-
 .task__list__button {
   cursor: pointer;
   font-size: var(--small-font-size);

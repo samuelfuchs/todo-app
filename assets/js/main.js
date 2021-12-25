@@ -15,7 +15,7 @@ function testFunction(event) {
   } else {
     const li = document.createElement('li')
     li.appendChild(document.createTextNode(fieldText.value))
-    li.className += ' ' + newClassName
+    li.classList.add('task__list__li')
 
     listUl.appendChild(li)
   }
