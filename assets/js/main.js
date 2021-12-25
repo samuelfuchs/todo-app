@@ -6,6 +6,7 @@ const listUl = document.querySelector('.task__list__ul')
 addBtn.addEventListener('click', testFunction)
 listUl.addEventListener('click', clickedFunction)
 
+// === adding new tasks ===
 function testFunction(event) {
   event.preventDefault()
 
@@ -14,6 +15,8 @@ function testFunction(event) {
   } else {
     const li = document.createElement('li')
     li.appendChild(document.createTextNode(fieldText.value))
+    li.className += ' ' + newClassName
+
     listUl.appendChild(li)
   }
 }
