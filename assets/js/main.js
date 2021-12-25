@@ -12,7 +12,9 @@ function testFunction(event) {
   if (fieldText.value == '') {
     alert('The field is empty')
   } else {
-    fieldText
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode('Four'))
+    listUl.appendChild(li)
   }
 }
 
