@@ -158,6 +158,22 @@ button {
   color: var(--first-color-alt);
 }
 
+.add__button,
+.delete__button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.add__button:hover,
+.delete__button:hover {
+  background-color: var(--first-color-alt);
+}
+
 /* layout */
 .container {
   max-width: 768px;
