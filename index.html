@@ -8,6 +8,24 @@
 
     <style>
       /* put css here */
+      ul li:nth-child(odd) {
+        background-color: aliceblue;
+      }
+
+      ul li.checked {
+        text-decoration: line-through;
+      }
+
+      ul li.checked::before {
+        content: '';
+        position: absolute;
+        border-color: red;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+      }
     </style>
   </head>
   <body>
