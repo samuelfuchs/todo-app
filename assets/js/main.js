@@ -39,8 +39,6 @@ function testFunction(event) {
   }
 }
 
-function generateItem() {}
-
 // ===== helper func =====
 function clickedFunction() {
   console.log('this item was clicked')
