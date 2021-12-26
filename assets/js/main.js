@@ -1,10 +1,12 @@
 const addBtn = document.querySelector('#add--button')
 const fieldText = document.getElementById('subdomain')
+const allAddBtns = document.querySelectorAll('.add__button')
 
 const listUl = document.querySelector('.task__list__ul')
 
 addBtn.addEventListener('click', testFunction)
-listUl.addEventListener('click', clickedFunction)
+
+console.log(allAddBtns)
 
 // === adding new tasks ===
 function testFunction(event) {
