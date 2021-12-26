@@ -7,15 +7,21 @@
     <title>Taskify | Todo App</title>
 
     <style>
-      /* put css here */
+      /* global settings */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      /* striped list */
       ul li:nth-child(odd) {
         background-color: aliceblue;
       }
-
+      /* checked elements styling */
       ul li.checked {
         text-decoration: line-through;
       }
-
+      /* add checkmark befor checked elements */
       ul li.checked::before {
         content: '';
         position: absolute;
@@ -44,6 +50,15 @@
 
     <script>
       // JS code here
+      // loop through existing li elements and add "x" button
+      const taskList = document.getElementsByTagName('li')
+      for (i = 0; i < taskList.length; i++) {
+        const span = document.createElement('span')
+        const x = document.createTextNode('\u00D7')
+        span.className = 'close'
+        span.appendChild(x)
+        taskList[i].appendChild(span)
+      }
     </script>
   </body>
 </html>
