@@ -9,4 +9,10 @@ for (i = 0; i < liList.length; i++) {
 }
 
 // close button hides elements
-const close = document.querySelector('.close')
+const close = document.getElementsByClassName('close')
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function () {
+    const div = this.parentElement
+    div.style.display = 'none'
+  }
+}
