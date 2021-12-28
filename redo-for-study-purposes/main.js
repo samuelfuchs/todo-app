@@ -29,4 +29,30 @@ ul.addEventListener(
   false
 )
 
-// const inputValue = document.getElementById('myInput')
+// add new tasks
+const add = document.querySelector('.addBtn')
+
+add.addEventListener('click', function () {
+  const li = document.createElement('li')
+  const inputText = document.getElementById('myInput').value
+  const liText = document.createTextNode(inputText)
+
+  li.appendChild(liText)
+  if (inputText === '') {
+    alert('you must write something')
+  } else {
+    document.getElementById('ulTask').appendChild(li)
+  }
+  document.getElementById('myInput').value = ''
+
+  const span = document.createElement('span')
+  const x = document.createTextNode('\u00D7')
+  span.className = 'close'
+  span.appendChild(x)
+  liList[i].appendChild(span)
+
+  close[i].onclick = function () {
+    const div = this.parentElement
+    div.style.display = 'none'
+  }
+})
