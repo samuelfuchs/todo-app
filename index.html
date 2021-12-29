@@ -4,49 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Taskify | Todo App</title>
 
-    <style>
-      /* global settings */
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      /* close button */
-      .close {
-        /* position: absolute; */
-        color: red;
-        right: 0;
-        top: 0;
-        padding: 12px 16px 12px 16px;
-      }
-
-      .close:hover {
-        background-color: lime;
-        color: #fff;
-      }
-      /* striped list */
-      ul li:nth-child(odd) {
-        background-color: aliceblue;
-      }
-      /* checked elements styling */
-      ul li.checked {
-        text-decoration: line-through;
-      }
-      /* add checkmark befor checked elements */
-      ul li.checked::before {
-        content: '';
-        position: absolute;
-        border-color: red;
-        border-style: solid;
-        border-width: 0 2px 2px 0;
-        transform: rotate(45deg);
-        height: 15px;
-        width: 7px;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <section class="add">
@@ -62,65 +23,6 @@
       </ul>
     </section>
 
-    <script>
-      // add "x" button for all existing li-elements
-      const taskList = document.getElementsByTagName('li')
-      for (i = 0; i < taskList.length; i++) {
-        const span = document.createElement('span')
-        const x = document.createTextNode('\u00D7')
-        span.className = 'close'
-        span.appendChild(x)
-        taskList[i].appendChild(span)
-      }
-
-      // x-button hides content
-      const close = document.getElementsByClassName('close')
-      for (i = 0; i < close.length; i++) {
-        close[i].onclick = function () {
-          const div = this.parentElement
-          div.style.display = 'none'
-        }
-      }
-
-      // Check items
-      const ul = document.querySelector('ul')
-      ul.addEventListener(
-        'click',
-        function (e) {
-          if (e.target.tagName === 'LI') {
-            e.target.classList.toggle('checked')
-          }
-        },
-        false
-      )
-
-      // add button - create new item to list
-      const add = document.querySelector('.addBtn')
-
-      add.addEventListener('click', function () {
-        const li = document.createElement('li'),
-          getInput = document.getElementById('fieldInput').value,
-          inputText = document.createTextNode(getInput)
-
-        li.appendChild(inputText)
-        if (getInput === '') {
-          alert('You must type something')
-        } else {
-          document.getElementById('taskUl').appendChild(li)
-        }
-        document.getElementById('fieldInput').value = ''
-
-        const span = document.createElement('span')
-        const x = document.createTextNode('\u00D7')
-        span.className = 'close'
-        span.appendChild(x)
-        taskList[i].appendChild(span)
-
-        close[i].onclick = function () {
-          const div = this.parentElement
-          div.style.display = 'none'
-        }
-      })
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

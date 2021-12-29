@@ -1,14 +1,14 @@
-// add close button
-const liList = document.getElementsByTagName('li')
-for (i = 0; i < liList.length; i++) {
-  const closeBtn = document.createElement('span')
+// add "x" button for all existing li-elements
+const taskList = document.getElementsByTagName('li')
+for (i = 0; i < taskList.length; i++) {
+  const span = document.createElement('span')
   const x = document.createTextNode('\u00D7')
-  closeBtn.appendChild(x)
-  closeBtn.className = 'close'
-  liList[i].appendChild(closeBtn)
+  span.className = 'close'
+  span.appendChild(x)
+  taskList[i].appendChild(span)
 }
 
-// close button hides elements
+// x-button hides content
 const close = document.getElementsByClassName('close')
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function () {
@@ -17,7 +17,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// check-functionality
+// Check items
 const ul = document.querySelector('ul')
 ul.addEventListener(
   'click',
@@ -29,27 +29,27 @@ ul.addEventListener(
   false
 )
 
-// add new tasks
+// add button - create new item to list
 const add = document.querySelector('.addBtn')
 
 add.addEventListener('click', function () {
-  const li = document.createElement('li')
-  const inputText = document.getElementById('myInput').value
-  const liText = document.createTextNode(inputText)
+  const li = document.createElement('li'),
+    getInput = document.getElementById('fieldInput').value,
+    inputText = document.createTextNode(getInput)
 
-  li.appendChild(liText)
-  if (inputText === '') {
-    alert('you must write something')
+  li.appendChild(inputText)
+  if (getInput === '') {
+    alert('You must type something')
   } else {
-    document.getElementById('ulTask').appendChild(li)
+    document.getElementById('taskUl').appendChild(li)
   }
-  document.getElementById('myInput').value = ''
+  document.getElementById('fieldInput').value = ''
 
   const span = document.createElement('span')
   const x = document.createTextNode('\u00D7')
   span.className = 'close'
   span.appendChild(x)
-  liList[i].appendChild(span)
+  taskList[i].appendChild(span)
 
   close[i].onclick = function () {
     const div = this.parentElement

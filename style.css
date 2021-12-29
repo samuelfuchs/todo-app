@@ -1,0 +1,39 @@
+/* global settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* close button */
+.close {
+  /* position: absolute; */
+  color: red;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: lime;
+  color: #fff;
+}
+/* striped list */
+ul li:nth-child(odd) {
+  background-color: aliceblue;
+}
+/* checked elements styling */
+ul li.checked {
+  text-decoration: line-through;
+}
+/* add checkmark befor checked elements */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: red;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
