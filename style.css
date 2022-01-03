@@ -58,16 +58,28 @@ a {
 /* button button--flex */
 /* button__icon */
 .back-button {
-  display: inline-block;
+  display: inline-flex;
   background-color: hsl(190, 69%, 61%);
   color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: 500;
+  align-items: center;
+  cursor: pointer;
 }
 
 .back-button:hover {
   background-color: hsl(190, 57%, 53%);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  transition: 0.3s;
+}
+
+.back-button:hover .button__icon {
+  transform: translateX(0.25rem);
 }
 
 /* close button */
