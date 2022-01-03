@@ -35,6 +35,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .section {
   padding: 1rem 0 4rem;
 }
@@ -48,6 +52,22 @@ ul {
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+/* back-button */
+/* button button--flex */
+/* button__icon */
+.back-button {
+  display: inline-block;
+  background-color: hsl(190, 69%, 61%);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  background-color: hsl(190, 57%, 53%);
 }
 
 /* close button */
