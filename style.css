@@ -82,6 +82,28 @@ a {
   transform: translateX(0.25rem);
 }
 
+/* Add Section */
+.addBtn {
+  /* display: inline-flex; */
+  background-color: hsl(138, 69%, 61%);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.addBtn:hover {
+  background-color: transparent;
+  color: hsl(138, 69%, 61%);
+}
+
+.addBtn:active {
+  background-color: transparent;
+  color: hsl(0, 0%, 0%);
+}
+
 /* close button */
 .close {
   /* position: absolute; */
