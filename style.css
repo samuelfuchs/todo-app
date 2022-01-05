@@ -82,15 +82,30 @@ a {
 }
 
 /* ----- add section ----- */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
 .addBtn {
   /* display: inline-flex; */
+  padding: 10px;
+  width: 25%;
   background-color: hsl(138, 69%, 61%);
   color: #fff;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  align-items: center;
+  float: left;
+  text-align: center;
+  font-size: 16px;
   cursor: pointer;
+  /* border-radius: 0.5rem;
+  align-items: center; */
   transition: all 0.3s;
+  border-radius: 0;
 }
 
 .addBtn:hover {
