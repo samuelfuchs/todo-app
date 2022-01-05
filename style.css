@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap');
 
-/* global settings */
+/* ----- global settings ----- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,6 +39,7 @@ a {
   text-decoration: none;
 }
 
+/* ----- reusable ----- */
 .section {
   padding: 1rem 0 4rem;
 }
@@ -54,7 +55,7 @@ a {
   gap: 1.5rem;
 }
 
-/* back-button */
+/* ----- hero section ----- */
 .back-button {
   display: inline-flex;
   background-color: hsl(190, 69%, 61%);
@@ -80,7 +81,7 @@ a {
   transform: translateX(0.25rem);
 }
 
-/* Add Section */
+/* ----- add section ----- */
 .addBtn {
   /* display: inline-flex; */
   background-color: hsl(138, 69%, 61%);
@@ -102,7 +103,43 @@ a {
   color: hsl(0, 0%, 0%);
 }
 
-/* close button */
+/* ----- list section ----- */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  font-size: 18px;
+  user-select: none;
+  transition: 0.3s;
+}
+
+ul li:nth-child(odd) {
+  background-color: aliceblue;
+}
+
+ul li:hover {
+  background-color: #ddd;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  background-color: #888;
+  color: #fff;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: red;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 15px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
 .close {
   position: absolute;
   color: red;
@@ -112,41 +149,6 @@ a {
 }
 
 .close:hover {
-  background-color: lime;
+  background-color: hsl(190, 57%, 53%);
   color: #fff;
-}
-/* ----- LIST ----- */
-ul li {
-  cursor: pointer;
-  position: relative;
-  transition: 0.3s;
-
-  user-select: none;
-}
-
-ul li:nth-child(odd) {
-  background-color: aliceblue;
-}
-/* checked elements styling */
-ul li.checked {
-  text-decoration: line-through;
-  background-color: #888;
-  color: #fff;
-}
-/* add checkmark befor checked elements */
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: red;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
-
-ul li:hover {
-  background-color: #ddd;
 }
