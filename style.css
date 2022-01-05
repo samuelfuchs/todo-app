@@ -45,14 +45,10 @@ a {
 }
 
 .container {
+  /* background-color: #555; */
   max-width: 768px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-}
-
-.grid {
-  display: grid;
-  gap: 1.5rem;
 }
 
 /* ----- hero section ----- */
@@ -83,6 +79,50 @@ a {
 
 /* ----- add section ----- */
 input {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+}
+
+.container__add {
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+.addBtn {
+  display: inline-block;
+  background-color: hsl(138, 69%, 61%);
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 12px 36px;
+  margin-left: -96px;
+}
+
+.addBtn:hover {
+  background-color: hsl(138, 100%, 70%);
+}
+.addBtn:active {
+  background-color: hsl(138, 69%, 61%);
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*
+input {
   margin: 0;
   border: none;
   border-radius: 0;
@@ -91,9 +131,10 @@ input {
   float: left;
   font-size: 16px;
 }
-
+*/
+/*
 .addBtn {
-  /* display: inline-flex; */
+
   padding: 10px;
   width: 25%;
   background-color: hsl(138, 69%, 61%);
@@ -102,12 +143,13 @@ input {
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  /* border-radius: 0.5rem;
-  align-items: center; */
+  
   transition: all 0.3s;
   border-radius: 0;
 }
+*/
 
+/*
 .addBtn:hover {
   background-color: transparent;
   color: hsl(138, 69%, 61%);
@@ -116,8 +158,8 @@ input {
 .addBtn:active {
   background-color: transparent;
   color: hsl(0, 0%, 0%);
-}
-
+} 
+*/
 /* ----- list section ----- */
 ul li {
   cursor: pointer;
