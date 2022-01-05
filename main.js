@@ -51,8 +51,10 @@ add.addEventListener('click', function () {
   span.appendChild(x)
   taskList[i].appendChild(span)
 
-  close[i].onclick = function () {
-    const div = this.parentElement
-    div.style.display = 'none'
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+      const div = this.parentElement
+      div.style.display = 'none'
+    }
   }
 })
