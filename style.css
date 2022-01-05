@@ -47,6 +47,8 @@ a {
 .container {
   /* background-color: #555; */
   max-width: 768px;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -208,4 +210,12 @@ ul li.checked::before {
 .close:hover {
   background-color: hsl(190, 57%, 53%);
   color: #fff;
+}
+
+/* ----- media queries ----- */
+@media screen and (min-width: 770px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
