@@ -55,8 +55,6 @@ a {
 }
 
 /* back-button */
-/* button button--flex */
-/* button__icon */
 .back-button {
   display: inline-flex;
   background-color: hsl(190, 69%, 61%);
@@ -106,7 +104,7 @@ a {
 
 /* close button */
 .close {
-  /* position: absolute; */
+  position: absolute;
   color: red;
   right: 0;
   top: 0;
@@ -117,13 +115,23 @@ a {
   background-color: lime;
   color: #fff;
 }
-/* striped list */
+/* ----- LIST ----- */
+ul li {
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+
+  user-select: none;
+}
+
 ul li:nth-child(odd) {
   background-color: aliceblue;
 }
 /* checked elements styling */
 ul li.checked {
   text-decoration: line-through;
+  background-color: #888;
+  color: #fff;
 }
 /* add checkmark befor checked elements */
 ul li.checked::before {
@@ -132,7 +140,13 @@ ul li.checked::before {
   border-color: red;
   border-style: solid;
   border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
+}
+
+ul li:hover {
+  background-color: #ddd;
 }
