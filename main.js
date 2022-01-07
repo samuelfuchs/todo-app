@@ -74,6 +74,13 @@ inputField.addEventListener('keyup', function (event) {
 // scrap all
 const scrappAll = document.querySelector('.scrap')
 
-scrappAll.addEventListener('click', function () {
-  console.log('omg, you clicked!')
-})
+scrappAll.addEventListener(
+  'click',
+  function () {
+    for (i = 0; i < taskList.length; i++) {
+      taskList[i].style.display = 'none'
+    }
+  }
+  // taskList[i].appendChild(span)
+  // taskList[i].style.display = 'none'
+)
