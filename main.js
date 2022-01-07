@@ -40,6 +40,8 @@ add.addEventListener('click', function () {
   li.appendChild(inputText)
   if (getInput === '') {
     alert('You must type something')
+  } else if (getInput.trim() == 0) {
+    alert('You must type in text')
   } else {
     document.getElementById('taskUl').appendChild(li)
   }
@@ -59,6 +61,7 @@ add.addEventListener('click', function () {
   }
 })
 
+// User hits enter on inputfield
 const inputField = document.getElementById('fieldInput')
 
 inputField.addEventListener('keyup', function (event) {
@@ -66,4 +69,11 @@ inputField.addEventListener('keyup', function (event) {
     event.preventDefault()
     document.querySelector('.addBtn').click()
   }
+})
+
+// scrap all
+const scrappAll = document.querySelector('.scrap')
+
+scrappAll.addEventListener('click', function () {
+  console.log('omg, you clicked!')
 })

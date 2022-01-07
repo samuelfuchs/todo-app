@@ -186,6 +186,15 @@ ul li.checked::before {
   color: #fff;
 }
 
+footer {
+  color: rgb(212, 212, 212);
+  margin-top: 1rem;
+}
+
+.error-no-text {
+  position: static;
+}
+
 /* ----- media queries ----- */
 @media screen and (min-width: 770px) {
   .container {
