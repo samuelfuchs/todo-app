@@ -58,3 +58,12 @@ add.addEventListener('click', function () {
     }
   }
 })
+
+const inputField = document.getElementById('fieldInput')
+
+inputField.addEventListener('keyup', function (event) {
+  if (event.keyCode === 13) {
+    event.preventDefault()
+    document.querySelector('.addBtn').click()
+  }
+})
