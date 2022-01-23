@@ -13,5 +13,3 @@ I build it from scratch to improve my programming skills.
 - CSS for styling
 
 - JavaScript for functionality and logic
-
-If you like this project, give it a star and feel free to use it for your own.
